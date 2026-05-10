@@ -9,35 +9,43 @@
 			content="Comprehensive gardening solutions."
 		/>
 		<meta property="og:type" content="website" />
-		<meta property="og:image" content="./assets/opengraph.png" />
-		<link rel="icon" type="image/png" href="./assets/logo.png" />
-		<link rel="apple-touch-icon" sizes="180x180" href="./assets/logo.png" />
+		<meta property="og:image" content="./assets/opengraph/opengraph.jpg" />
+		<link rel="icon" type="image/png" href="./assets/opengraph/logo.svg" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./assets/opengraph/logo.svg"
+		/>
 		<link rel="stylesheet" href="./css/style.css" />
 
 		<title>YardGuard</title>
 	</head>
 	<body id="body">
 		<main class="body-container">
-			<nav class="nav">
+			<nav class="nav" id="navbar">
 				<a href="./" class="nav-brand">
-					<img src="./assets/icons/logo.svg" class="brand-logo-img" />
-					<span class="brand-name">YardGuard</span>
+					<img src="./assets/opengraph/logo-text.svg" class="brand-logo-img" />
 				</a>
 
-				<div class="nav-desktop-links">
+				<div class="nav-links-container" id="nav-menu">
+					<a href="#hero" class="nav-link">Home</a>
 					<a href="#services" class="nav-link">Services</a>
-					<a href="#projects" class="nav-link">Projects</a>
 					<a href="#about" class="nav-link">About Us</a>
-					<a href="#blog" class="nav-link">Blog</a>
 					<a href="#contact" class="nav-link">Contact</a>
 				</div>
 
 				<div class="nav-actions">
 					<a href="#" class="nav-btn">Request a Quote</a>
+
+					<div class="burger-menu" id="burger-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
 				</div>
 			</nav>
 
-			<header class="hero">
+			<header id="hero" class="hero">
 				<div class="hero-info">
 					<div class="hero-text">
 						<span class="hero-subtitle"
@@ -122,56 +130,29 @@
 								atque natus inventore cumque laboriosam asperiores.
 							</p>
 							<a href="#" class="card-link"
-								>Learn more <img src="./assets/icons/arrow-right.svg" />;</a
-							>
+								>Learn more <img src="./assets/icons/arrow-right.svg"
+							/></a>
 						</div>
 						<img src="./assets/images/service-4.jpg" class="card-bg" />
 					</div>
 				</div>
 			</section>
 
-			<section class="features-section">
-				<div class="features-container">
-					<div class="feature-item">
-						<img src="./assets/icons/pencil-ruler.svg" />
-						<div class="feat-info">
-							<h4>Custom Design</h4>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Tempore, itaque autem et est tenetur nam a.
-							</p>
-						</div>
+			<section class="cta-banner-section">
+				<div class="cta-banner-content">
+					<div class="cta-text">
+						<h2 class="cta-title">Ready to transform your garden?</h2>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
+							beatae aperiam ad ducimus. Minima ratione
+						</p>
 					</div>
-					<div class="feature-item">
-						<img src="./assets/icons/leaf.svg" />
-						<div class="feat-info">
-							<h4>Sustainability</h4>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Tempore, itaque autem et est tenetur nam a.
-							</p>
-						</div>
-					</div>
-					<div class="feature-item">
-						<img src="./assets/icons/users.svg" />
-						<div class="feat-info">
-							<h4>Expert Team</h4>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Tempore, itaque autem et est tenetur nam a.
-							</p>
-						</div>
-					</div>
-					<div class="feature-item">
-						<img src="./assets/icons/shield-check.svg" />
-						<div class="feat-info">
-							<h4>Total Commitment</h4>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Tempore, itaque autem et est tenetur nam a.
-							</p>
-						</div>
-					</div>
+					<a href="#" class="ghost-btn"
+						>Contact Us
+						<img
+							src="./assets/icons/caret-double-right-bold.svg"
+							class="btn-icon"
+					/></a>
 				</div>
 			</section>
 
@@ -201,30 +182,14 @@
 				</div>
 			</section>
 
-			<section class="cta-banner-section">
-				<div class="cta-banner-content">
-					<div class="cta-text">
-						<h2 class="cta-title">Ready to transform your garden?</h2>
-						<p>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
-							beatae aperiam ad ducimus. Minima ratione
-						</p>
-					</div>
-					<a href="#" class="ghost-btn"
-						>Contact Us
-						<img
-							src="./assets/icons/caret-double-right-bold.svg"
-							class="btn-icon"
-					/></a>
-				</div>
-			</section>
-
 			<footer class="main-footer">
 				<div class="footer-container">
 					<div class="footer-brand">
 						<div class="brand-logo">
-							<img src="./assets/icons/logo.svg" />
-							<span>YardGuard</span>
+							<img
+								src="./assets/opengraph/logo-text.svg"
+								class="footer-brand-img"
+							/>
 						</div>
 						<p class="brand-tagline">We care for what makes you feel good.</p>
 						<div class="social-links">
@@ -240,41 +205,45 @@
 
 					<div class="footer-links-grid">
 						<div class="footer-column">
-							<h4>LINKS</h4>
+							<h3>LINKS</h3>
 							<ul>
-								<li><a href="#">Home</a></li>
-								<li><a href="#services">Services</a></li>
-								<li><a href="#projects">Projects</a></li>
-								<li><a href="#about">About Us</a></li>
-								<li><a href="#blog">Blog</a></li>
-								<li><a href="#contact">Contact</a></li>
+								<li><a href="#hero" class="footer-link">Home</a></li>
+								<li><a href="#services" class="footer-link">Services</a></li>
+								<li><a href="#about" class="footer-link">About Us</a></li>
+								<li><a href="#contact" class="footer-link">Contact</a></li>
 							</ul>
 						</div>
 						<div class="footer-column">
-							<h4>SERVICES</h4>
+							<h3>SERVICES</h3>
 							<ul>
-								<li><a href="#">Garden Design</a></li>
-								<li><a href="#">Installation</a></li>
-								<li><a href="#">Maintenance</a></li>
-								<li><a href="#">Lighting</a></li>
-								<li><a href="#">Irrigation Systems</a></li>
+								<li><a href="#" class="footer-link">Garden Design</a></li>
+								<li><a href="#" class="footer-link">Installation</a></li>
+								<li><a href="#" class="footer-link">Maintenance</a></li>
 							</ul>
 						</div>
 						<div class="footer-column">
-							<h4>CONTACT</h4>
+							<h3>CONTACT</h3>
 							<ul>
-								<li><a href="tel:">+55 555 555 55</a></li>
+								<li><a href="tel:" class="footer-link">+55 555 555 55</a></li>
 								<li>
-									<a href="mailto:">lorem@ipsum.com</a>
+									<a href="mailto:" class="footer-link">lorem@ipsum.com</a>
 								</li>
 								<li>
-									<a href="#">Address<br />City, State</a>
+									<a href="#" class="footer-link">Address<br />City, State</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
+				<div class="footer-bottom">
+					<p class="copyright">© 2026 Yard Guard</p>
+					<a href="https://SynthOcean.com" target="_blank" class="powered-by">
+						<img src="./assets/opengraph/powered-by-so.svg" class="so-logo" />
+					</a>
+				</div>
 			</footer>
 		</main>
+
+		<script src="./js/main.js"></script>
 	</body>
 </html>
