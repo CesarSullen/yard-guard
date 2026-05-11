@@ -4,7 +4,7 @@ const burgerBtn = document.getElementById("burger-btn");
 const navMenu = document.getElementById("nav-menu");
 
 window.addEventListener("scroll", () => {
-	if (window.scrollY > 50) {
+	if (window.scrollY > 100) {
 		navbar.classList.add("scrolled");
 	} else {
 		navbar.classList.remove("scrolled");

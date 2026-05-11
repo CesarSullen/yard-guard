@@ -27,7 +27,7 @@
 /* ROOT & BASE */
 :root {
 	--primary-color: #14241e;
-	--accent-color: #96a14f;
+	--accent-color: #4fb048;
 	--bg-color: #f5f4f0;
 	--text-dark: #121212;
 	--text-light: #f9f7f4;
@@ -164,6 +164,7 @@ section {
 .nav-link {
 	color: var(--text-light);
 	font-size: 0.9rem;
+	text-transform: uppercase;
 }
 
 .nav-actions {
@@ -292,7 +293,6 @@ section {
 .hero-description {
 	margin: 0 auto;
 	max-width: 500px;
-	opacity: 0.9;
 	line-height: 1.6;
 	font-size: 0.9rem;
 }
@@ -397,9 +397,10 @@ section {
 	top: -20px;
 	left: 1.5rem;
 	width: 40px;
-	background-color: var(--accent-color);
-	padding: 10px;
-	border-radius: 500px;
+	background-color: var(--primary-color);
+	border: solid 2px var(--accent-color);
+	padding: 6px;
+	border-radius: 2px;
 }
 
 .card-info {
@@ -439,6 +440,9 @@ section {
 
 .card-link img {
 	width: 18px;
+}
+.card-link:hover img {
+	transform: translateX(5px);
 }
 
 /* CTA BANNER */
@@ -608,7 +612,7 @@ section {
 
 @media (min-width: 700px) {
 	.footer-links-grid {
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
