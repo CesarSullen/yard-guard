@@ -3,6 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="YardGuard offers comprehensive gardening solutions: design, installation, maintenance and lighting for every type of garden."
+		/>
 		<meta property="og:title" content="YardGuard" />
 		<meta
 			property="og:description"
@@ -17,31 +21,40 @@
 			href="./assets/opengraph/logo.svg"
 		/>
 		<link rel="stylesheet" href="./css/style.css" />
-
 		<title>YardGuard</title>
 	</head>
 	<body id="body">
 		<main class="body-container">
 			<nav class="nav" id="navbar">
 				<a href="./" class="nav-brand">
-					<img src="./assets/opengraph/logo-text.svg" class="brand-logo-img" />
+					<img
+						src="./assets/opengraph/logo-text.svg"
+						class="brand-logo-img"
+						alt="YardGuard logo"
+					/>
 				</a>
 
-				<div class="nav-links-container" id="nav-menu">
-					<a href="#hero" class="nav-link">Home</a>
-					<a href="#services" class="nav-link">Services</a>
-					<a href="#about" class="nav-link">About Us</a>
-					<a href="#contact" class="nav-link">Contact</a>
-				</div>
+				<ul class="nav-links-container" id="nav-menu">
+					<li><a href="#hero" class="nav-link">Home</a></li>
+					<li><a href="#services" class="nav-link">Services</a></li>
+					<li><a href="#about" class="nav-link">About Us</a></li>
+					<li><a href="#contact" class="nav-link">Contact</a></li>
+				</ul>
 
 				<div class="nav-actions">
-					<a href="#" class="nav-btn">Request a Quote</a>
-
-					<div class="burger-menu" id="burger-btn">
+					<a href="#contact" class="nav-btn">Request a Quote</a>
+					<button
+						type="button"
+						class="burger-menu"
+						id="burger-btn"
+						aria-label="Open menu"
+						aria-expanded="false"
+						aria-controls="nav-menu"
+					>
 						<span></span>
 						<span></span>
 						<span></span>
-					</div>
+					</button>
 				</div>
 			</nav>
 
@@ -61,10 +74,9 @@
 							laboriosam iste, sequi cum quidem enim laborum aut distinctio vel.
 						</p>
 					</div>
-
 					<div class="hero-cta">
 						<a href="#services" class="btn-primary">Our Services</a>
-						<a href="#projects" class="ghost-btn">View Projects</a>
+						<a href="#about" class="ghost-btn">View Projects</a>
 					</div>
 				</div>
 			</header>
@@ -75,66 +87,110 @@
 					<h2 class="section-title">Solutions for Every Type of Garden</h2>
 				</div>
 
-				<div class="services-grid">
-					<div class="service-card">
+				<ul class="services-grid">
+					<li class="service-card">
+						<div class="card-media">
+							<img
+								src="./assets/images/service-1.jpg"
+								class="card-bg"
+								alt="Garden design project"
+								loading="lazy"
+							/>
+						</div>
 						<div class="card-info">
-							<img src="./assets/icons/flower-tulip.svg" class="card-icon" />
+							<img
+								src="./assets/icons/flower-tulip.svg"
+								class="card-icon"
+								alt=""
+							/>
 							<h3 class="card-title">Garden Design</h3>
 							<p class="card-text">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							</p>
 							<a href="#" class="card-link"
-								>Learn more <img src="./assets/icons/arrow-right.svg" />
+								>Learn more
+								<img src="./assets/icons/arrow-right.svg" alt="" />
 							</a>
 						</div>
-						<img src="./assets/images/service-1.jpg" class="card-bg" />
-					</div>
-					<div class="service-card">
+					</li>
+
+					<li class="service-card">
+						<div class="card-media">
+							<img
+								src="./assets/images/service-2.jpg"
+								class="card-bg"
+								alt="Plant installation"
+								loading="lazy"
+							/>
+						</div>
 						<div class="card-info">
-							<img src="./assets/icons/potted-plant.svg" class="card-icon" />
+							<img
+								src="./assets/icons/potted-plant.svg"
+								class="card-icon"
+								alt=""
+							/>
 							<h3 class="card-title">Installation</h3>
 							<p class="card-text">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							</p>
 							<a href="#" class="card-link"
-								>Learn more <img src="./assets/icons/arrow-right.svg"
-							/></a>
+								>Learn more
+								<img src="./assets/icons/arrow-right.svg" alt="" />
+							</a>
 						</div>
-						<img src="./assets/images/service-2.jpg" class="card-bg" />
-					</div>
-					<div class="service-card">
+					</li>
+
+					<li class="service-card">
+						<div class="card-media">
+							<img
+								src="./assets/images/service-3.jpg"
+								class="card-bg"
+								alt="Garden maintenance work"
+								loading="lazy"
+							/>
+						</div>
 						<div class="card-info">
-							<img src="./assets/icons/shovel.svg" class="card-icon" />
+							<img src="./assets/icons/shovel.svg" class="card-icon" alt="" />
 							<h3 class="card-title">Maintenance</h3>
 							<p class="card-text">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							</p>
 							<a href="#" class="card-link"
-								>Learn more <img src="./assets/icons/arrow-right.svg"
-							/></a>
+								>Learn more
+								<img src="./assets/icons/arrow-right.svg" alt="" />
+							</a>
 						</div>
-						<img src="./assets/images/service-3.jpg" class="card-bg" />
-					</div>
-					<div class="service-card">
+					</li>
+
+					<li class="service-card">
+						<div class="card-media">
+							<img
+								src="./assets/images/service-4.jpg"
+								class="card-bg"
+								alt="Outdoor garden lighting"
+								loading="lazy"
+							/>
+						</div>
 						<div class="card-info">
 							<img
 								src="./assets/icons/lightbulb-filament.svg"
 								class="card-icon"
+								alt=""
 							/>
 							<h3 class="card-title">Lighting</h3>
 							<p class="card-text">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							</p>
 							<a href="#" class="card-link"
-								>Learn more <img src="./assets/icons/arrow-right.svg"
-							/></a>
+								>Learn more
+								<img src="./assets/icons/arrow-right.svg" alt="" />
+							</a>
 						</div>
-						<img src="./assets/images/service-4.jpg" class="card-bg" />
-					</div>
-				</div>
+					</li>
+				</ul>
 			</section>
 
-			<section class="cta-banner-section">
+			<section class="cta-banner-section" id="contact">
 				<div class="cta-banner-content">
 					<div class="cta-text">
 						<h2 class="cta-title">Ready to transform your garden?</h2>
@@ -143,12 +199,14 @@
 							beatae aperiam ad ducimus. Minima ratione
 						</p>
 					</div>
-					<a href="#" class="ghost-btn"
+					<a href="mailto:hello@yardguard.com" class="ghost-btn"
 						>Contact Us
 						<img
 							src="./assets/icons/caret-double-right-bold.svg"
 							class="btn-icon"
-					/></a>
+							alt=""
+						/>
+					</a>
 				</div>
 			</section>
 
@@ -172,7 +230,12 @@
 					</div>
 					<div class="about-visuals">
 						<div class="image-wrapper">
-							<img src="./assets/images/about-img.jpg" class="about-img" />
+							<img
+								src="./assets/images/about-img.jpg"
+								class="about-img"
+								alt="YardGuard team working in a garden"
+								loading="lazy"
+							/>
 						</div>
 					</div>
 				</div>
@@ -185,18 +248,27 @@
 							<img
 								src="./assets/opengraph/logo-text.svg"
 								class="footer-brand-img"
+								alt="YardGuard logo"
 							/>
 						</div>
 						<p class="brand-tagline">We care for what makes you feel good.</p>
-						<div class="social-links">
-							<a href="#"
-								><img src="./assets/icons/instagram-logo-fill.svg"
-							/></a>
-							<a href="#"
-								><img src="./assets/icons/facebook-logo-fill.svg"
-							/></a>
-							<a href="#"><img src="./assets/icons/youtube-logo-fill.svg" /></a>
-						</div>
+						<ul class="social-links">
+							<li>
+								<a href="#" aria-label="YardGuard on Instagram"
+									><img src="./assets/icons/instagram-logo-fill.svg" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="#" aria-label="YardGuard on Facebook"
+									><img src="./assets/icons/facebook-logo-fill.svg" alt=""
+								/></a>
+							</li>
+							<li>
+								<a href="#" aria-label="YardGuard on YouTube"
+									><img src="./assets/icons/youtube-logo-fill.svg" alt=""
+								/></a>
+							</li>
+						</ul>
 					</div>
 
 					<div class="footer-links-grid">
@@ -212,9 +284,15 @@
 						<div class="footer-column">
 							<h3>CONTACT</h3>
 							<ul>
-								<li><a href="tel:" class="footer-link">+55 555 555 55</a></li>
 								<li>
-									<a href="mailto:" class="footer-link">lorem@ipsum.com</a>
+									<a href="tel:+555555555" class="footer-link"
+										>+55 555 555 55</a
+									>
+								</li>
+								<li>
+									<a href="mailto:lorem@ipsum.com" class="footer-link"
+										>lorem@ipsum.com</a
+									>
 								</li>
 								<li>
 									<a href="#" class="footer-link">Address<br />City, State</a>
@@ -223,15 +301,24 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="footer-bottom">
 					<p class="copyright">© 2026 Yard Guard</p>
-					<a href="https://SynthOcean.com" target="_blank" class="powered-by">
-						<img src="./assets/opengraph/powered-by-so.svg" class="so-logo" />
+					<a
+						href="https://SynthOcean.com"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="powered-by"
+					>
+						<img
+							src="./assets/opengraph/powered-by-so.svg"
+							class="so-logo"
+							alt="Powered by SynthOcean"
+						/>
 					</a>
 				</div>
 			</footer>
 		</main>
-
 		<script src="./js/main.js"></script>
 	</body>
 </html>
